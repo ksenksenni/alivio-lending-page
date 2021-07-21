@@ -1,0 +1,26 @@
+{
+    "name": "alivio-lending-page",
+    "version": "1.0.0",
+    "description": "study project",
+    "main": "index.js",
+    "scripts": {
+        "build": "gulp compileSass",
+        "watch": "gulp compileSass && gulp watchSass"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ksenksenni/alivio-lending-page.git"
+    },
+    "author": "nikolaevaksa@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ksenksenni/alivio-lending-page/issues"
+    },
+    "homepage": "https://github.com/ksenksenni/alivio-lending-page#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-rimraf": "^1.0.0",
+        "gulp-sass": "^4.1.0"
+    }
+}
