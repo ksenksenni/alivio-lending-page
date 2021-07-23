@@ -1,0 +1,13 @@
+.video-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 460px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.video-block__content {
+    max-width: 300px;
+}

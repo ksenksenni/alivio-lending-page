@@ -86,30 +86,39 @@
             </section>
         </section>
 
-        <article>
-            <h2>Let's hear about Kayla's success story</h2>
-            <p>See how well Alivio works in a real customer’s life. </p>
+        <article class="video-block">
 
-            <video width="895" height="515" controls="controls" poster="img/video.png">
+            <div class="video-block__content">
+                <h2>Let's hear about <br> Kayla's success story</h2>
+                <p>See how well Alivio works in a real customer’s life. </p>
+                <a href="#">Let's get started</a>
+            </div>
+
+            <video width="547" height="357" controls="controls" poster="img/video.png">
                 <source src="img/ovg.ogv" type='video/ogg'>
                 <source src="img/mp4.mp4" type='video/mp4'>
                 <source src="img/webm.webm" type='video/webm'>
                </video>
+
         </article>
 
-        <section>
-            <img src="img/avatar.png" alt="avatar">
+        <section class="personal-diary">
+            <div class="personal-diary__main container">
+                <img class="personal-diary__main-image" src="img/avatar.png" alt="avatar">
 
-            <p>You tell us your stress, We make your diary</p>
+                <div class="personal-diary__main-content">
+                    <p>Our product</p>
 
-            <h2>You tell us your stress, We make your diary</h2>
-            <p>Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                    <h2>You tell us your stress, <br> We make your diary</h2>
+                    <p>Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
 
-            <a href="#">Find Your Way</a>
+                    <a href="#">Find Your Way</a>
+                </div>
+            </div>
 
-            <div>
+            <div class="personal-diary__card">
                 <h3>Customized For</h3>
-                <img src="img/avatar.png" alt="Mikayla">
+                <img class="personal-diary__card-image" src="img/avatar.png" alt="Mikayla">
                 <p>Mikayla</p>
 
                 <h4>Your custom contents</h4>
@@ -122,17 +131,19 @@
         </section>
     </main>
 
-    <footer>
-        <h5>Alivio</h5>
+    <footer class="footer">
+        <div class="footer__content container">
+            <h5 class="footer__content-title">Alivio</h5>
 
-        <nav>
-            <ul>
-                <li>Why Alivio</li>
-                <li>Solutions</li>
-                <li>Community</li>
-                <li>Pricing</li>
-            </ul>
-        </nav>
+            <nav class="footer__content-menu">
+                <ul class="footer__content-menu--items">
+                    <li class="footer__content-menu--item">Why Alivio</li>
+                    <li class="footer__content-menu--item">Solutions</li>
+                    <li class="footer__content-menu--item">Community</li>
+                    <li class="footer__content-menu--item">Pricing</li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
 </body>

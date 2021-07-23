@@ -1,0 +1,36 @@
+.personal-diary {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.personal-diary__main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.personal-diary__main-image {
+    max-width: 350px;
+}
+
+.personal-diary__main-content {
+    max-width: 320px;
+}
+
+.personal-diary__card {
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.personal-diary__card-image {
+    width: 30px;
+    border-radius: 50%;
+}
