@@ -1,19 +1,31 @@
 .footer {
     margin-top: 30px;
-    margin-bottom: 50px;
+    background-color: map-get($colors, 'emerald-green');
+    color: map-get($colors, 'white');
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footer__content {
+    margin-left: 80px;
 }
 
 .footer__content-title {
-    margin-bottom: 30px;
-    margin-left: 40px;
+    font-family: Avenir, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-bottom: 50px;
 }
 
 .footer__content-menu--items {
     list-style: none;
+    margin-left: 40px;
 }
 
 .footer__content-menu--item {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     &:last-child {
         margin-bottom: 0;
     }
