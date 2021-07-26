@@ -45,8 +45,8 @@
         <section class="main-description container">
             <section class="main-description__item-introduction">
                 <div class="item-introduction__heading">
-                    <p>How it works</p>
-                    <h2>Understand & Release <br> the stress in 3 steps</h2>
+                    <p class="item-introduction__heading--caption">How it works</p>
+                    <h2 class="item-introduction__heading--title">Understand & Release <br> the stress in 3 steps</h2>
                 </div>
                 <div class="item-introduction__text">
                     <p>Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</p>
@@ -55,7 +55,7 @@
 
             <section class="main-description__items">
                 <section class="main-description__item">
-                    <p>01</p>
+                    <p class="main-description__item-namber">01</p>
 
                     <dl>
                         <dt class="main-description__item-title">Personalize</dt>
@@ -64,8 +64,8 @@
                     </dl>
                 </section>
 
-                <section class="main-description__item">
-                    <p>02</p>
+                <section class="main-description__item--flex-end">
+                    <p class="main-description__item-namber main-description__item-namber--bottom">02</p>
 
                     <dl>
                         <dt class="main-description__item-title">Write & Understand</dt>
@@ -75,7 +75,7 @@
                 </section>
 
                 <section class="main-description__item">
-                    <p>03</p>
+                    <p class="main-description__item-namber">03</p>
 
                     <dl>
                         <dt class="main-description__item-title">Alivio!</dt>
@@ -89,17 +89,21 @@
         <article class="video-block">
 
             <div class="video-block__content">
-                <h2>Let's hear about <br> Kayla's success story</h2>
-                <p>See how well Alivio works in a real customer’s life. </p>
+                <h2 class="video-block__content-title">Let's hear about <br> Kayla's success story</h2>
+                <p class="video-block__content-text">See how well Alivio works in a real customer’s life. </p>
                 <a class="btn" href="#">Let's get started</a>
             </div>
 
-            <video width="547" height="357" controls="controls" poster="img/video.png">
+            <div class="video-block__player">
+                <video width="547" height="357" controls="controls" poster="img/video.png">
                 <source src="img/ovg.ogv" type='video/ogg'>
                 <source src="img/mp4.mp4" type='video/mp4'>
                 <source src="img/webm.webm" type='video/webm'>
                </video>
 
+                <img class="video-block__player-image" src="img/play-white.png" width="60">
+
+            </div>
         </article>
 
         <section class="personal-diary">
@@ -107,25 +111,25 @@
                 <img class="personal-diary__main-image" src="img/avatar.png" alt="avatar">
 
                 <div class="personal-diary__main-content">
-                    <p>Our product</p>
+                    <p class="personal-diary__main-content-caption">Our product</p>
 
-                    <h2>You tell us your stress, <br> We make your diary</h2>
-                    <p>Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                    <h2 class="personal-diary__main-content-caption-title">You tell us your stress, <br> We make your diary</h2>
+                    <p class="personal-diary__main-content-caption-text">Everyone experiences it, and in different ways. <br> Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
 
                     <a class="btn" href="#">Find Your Way</a>
                 </div>
             </div>
 
             <div class="personal-diary__card">
-                <h3>Customized For</h3>
+                <h3 class="personal-diary__card-heading">Customized For</h3>
                 <img class="personal-diary__card-image" src="img/avatar.png" alt="Mikayla">
-                <p>Mikayla</p>
+                <p class="personal-diary__card-caption">Mikayla</p>
 
-                <h4>Your custom contents</h4>
+                <h4 class="personal-diary__card-title">Your custom contents</h4>
 
                 <ul>
-                    <li>Understand Your Stress</li>
-                    <li>Anger Management</li>
+                    <li class="personal-diary__card-item">Understand Your Stress</li>
+                    <li class="personal-diary__card-item">Anger Management</li>
                 </ul>
             </div>
         </section>

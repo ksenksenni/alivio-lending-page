@@ -1,7 +1,7 @@
 .personal-diary {
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 140px;
 }
 
 .personal-diary__main {
@@ -15,22 +15,62 @@
 }
 
 .personal-diary__main-content {
-    max-width: 320px;
+    max-width: 550px;
+}
+
+.personal-diary__main-content-caption {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.personal-diary__main-content-caption-title {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    line-height: 1.5;
+    color: map-get($colors, 'green');
+    margin-top: 0;
+}
+
+.personal-diary__main-content-caption-text {
+    margin-bottom: 30px;
 }
 
 .personal-diary__card {
     position: absolute;
     top: 170px;
     left: 170px;
-    width: 150px;
-    height: 150px;
-    background-color: tomato;
+    width: 170px;
+    height: 170px;
+    background-color: map-get($colors, 'white');
+    box-shadow: 0px 5px 10px 0px lightgray;
     margin: 20px;
     text-align: center;
     font-size: 10px;
+    color: map-get($colors, 'black');
+}
+
+.personal-diary__card-heading {
+    font-style: 14px;
 }
 
 .personal-diary__card-image {
     width: 30px;
     border-radius: 50%;
+}
+
+.personal-diary__card-caption {
+    font-style: 11px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.personal-diary__card-title {
+    font-family: Georgia, serif;
+    font-style: 16px;
+    font-weight: bold;
+}
+
+.personal-diary__card-item {
+    text-align: left;
+    margin-bottom: 10px;
 }
