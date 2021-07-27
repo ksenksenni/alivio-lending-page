@@ -34,7 +34,6 @@
             font-family: Georgia, serif;
             font-size: 40px;
             line-height: 1.5;
-            font-weight: bold;
             color: map-get($colors, 'green');
         }
     }
@@ -48,7 +47,7 @@
     .main-description__item-namber {
         position: absolute;
         z-index: 1;
-        top: 1000px;
+        top: 1040px;
         font-family: Georgia, serif;
         font-size: 150px;
         color: map-get($colors, 'green');
@@ -56,7 +55,7 @@
     }
     
     .main-description__item-namber--bottom {
-        top: 1190px;
+        top: 1240px;
     }
     
     .main-description__item-title {
@@ -64,7 +63,7 @@
         font-family: Georgia, serif;
         color: map-get($colors, 'black');
         font-size: 28px;
-        font-weight: bold;
+        font-weight: map-get($weight, 'bold');
         margin-bottom: 20px;
         text-align: center;
         &:nth-of-type(2) {

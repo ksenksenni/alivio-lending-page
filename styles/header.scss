@@ -12,16 +12,29 @@
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 150px;
+    @include for-tablet-large {
+        flex-direction: column;
+        margin-left: 0;
+    }
 }
 
 .header__top-menu {
     display: flex;
     padding-left: 0;
+    @include for-tablet-large {
+        flex-direction: column;
+        align-self: stretch;
+        text-align: center;
+    }
 }
 
 .header__top-menu--items {
     display: flex;
     list-style: none;
+    @include for-tablet-large {
+        flex-direction: column;
+        padding-left: 0;
+    }
 }
 
 .header__top-menu-item {
@@ -29,11 +42,26 @@
     &:last-child {
         margin-right: 0;
     }
+    @include for-tablet-large {
+        margin-right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 2px solid map-get($colors, 'green');
+        &:last-child {
+            border-bottom: 2px solid map-get($colors, 'green');
+        }
+    }
 }
 
 .top-menu-item__link {
     color: map-get($colors, 'black');
     text-decoration: none;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &:active {
+        opacity: 30%;
+    }
 }
 
 .header__top-btn {
@@ -43,8 +71,12 @@
 }
 
 .header__top-text {
+    display: block;
     align-self: center;
     margin: 0 20px 0 300px;
+    @include for-tablet-large {
+        display: none;
+    }
 }
 
 .header__top-btn-link {
@@ -57,20 +89,33 @@
     background-image: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    @include for-tablet-large {
+        background-image: none;
+        background-color: map-get($colors, 'emerald-green');
+        text-align: center;
+    }
 }
 
 .header__bottom-content {
     width: 440px;
     padding-top: 50px;
     margin-left: 150px;
+    @include for-tablet-large {}
     &--heading {
-        font-family: Georgia, serif;
+        font-family: Georgia, sans-serif;
         font-size: 60px;
         line-height: 1.5;
         color: map-get($colors, 'green');
         margin-bottom: 40px;
+        @include for-tablet-large {
+            color: map-get($colors, 'white');
+            font-size: 45px;
+        }
     }
     &--text {
         margin-bottom: 60px;
+        @include for-tablet-large {
+            color: map-get($colors, 'white');
+        }
     }
 }

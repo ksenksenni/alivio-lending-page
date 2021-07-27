@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Lato, serif;
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot') format('embedded-opentype'), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: map-get($weight, 'normal');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Georgia, sans-serif;
+    src: url('../fonts/Georgia-Bold.eot');
+    src: url('../fonts/Lato-Regular.eot') format('embedded-opentype'), url('../fonts/Georgia-Bold.woff2') format('woff2'), url('../fonts/Georgia-Bold.ttf') format('truetype');
+    font-weight: map-get($weight, 'bold');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Arial, serif;
+    src: url('../fonts/Avenir-Roman.eot');
+    src: url('../fonts/Avenir-Roman.eot') format('embedded-opentype'), url('../fonts/Avenir-Roman.woff2') format('woff2'), url('../fonts/Avenir-Roman.ttf') format('truetype');
+    font-weight: map-get($weight, 'bold');
+    font-style: normal;
+}

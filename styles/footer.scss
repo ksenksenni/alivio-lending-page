@@ -9,11 +9,13 @@
 
 .footer__content {
     margin-left: 80px;
+    @include for-tablet-large {
+        text-align: center;
+    }
 }
 
 .footer__content-title {
     font-family: Avenir, sans-serif;
-    font-weight: bold;
     font-size: 40px;
     margin-left: 80px;
     margin-bottom: 50px;

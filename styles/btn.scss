@@ -5,4 +5,10 @@
     background-color: map-get($colors, 'green');
     border: 1px solid map-get($colors, 'green');
     border-radius: 5px;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &:active {
+        opacity: 30%;
+    }
 }
