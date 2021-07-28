@@ -5,36 +5,6 @@
                 }
             }
             
-            .main-description__items {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-                padding-bottom: 20px;
-                height: 850px;
-                @include for-tablet-large {
-                    flex-direction: column;
-                    height: 100%;
-                    text-align: center;
-                }
-            }
-            
-            .main-description__item {
-                max-inline-size: 350px;
-                @include for-tablet-large {
-                    height: 90%;
-                    align-self: center;
-                }
-            }
-            
-            .main-description__item-flex-end {
-                align-self: flex-end;
-                max-width: 350px;
-                @include for-tablet-large {
-                    align-self: center;
-                }
-            }
-            
             .main-description__item-introduction {
                 display: flex;
                 justify-content: space-between;
@@ -68,6 +38,36 @@
                 @include for-tablet-large {
                     max-width: 80%;
                     margin-top: 0;
+                    align-self: center;
+                }
+            }
+            
+            .main-description__items {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding-bottom: 20px;
+                height: 850px;
+                @include for-tablet-large {
+                    flex-direction: column;
+                    height: 100%;
+                    text-align: center;
+                }
+            }
+            
+            .main-description__item {
+                max-inline-size: 350px;
+                @include for-tablet-large {
+                    height: 90%;
+                    align-self: center;
+                }
+            }
+            
+            .main-description__item-flex-end {
+                align-self: flex-end;
+                max-width: 350px;
+                @include for-tablet-large {
                     align-self: center;
                 }
             }

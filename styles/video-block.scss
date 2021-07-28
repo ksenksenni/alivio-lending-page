@@ -41,10 +41,6 @@
         }
     }
     
-    .personal-diary__main-btn {
-        @include for-tablet-large {}
-    }
-    
     .video-block__player-image {
         position: absolute;
         bottom: 150px;
