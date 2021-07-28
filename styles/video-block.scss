@@ -9,12 +9,21 @@
         padding-top: 100px;
         padding-bottom: 70px;
         color: map-get($colors, 'white');
+        @include for-tablet-large {
+            flex-direction: column;
+            text-align: center;
+            height: 600px;
+            padding-top: 70px;
+        }
     }
     
     .video-block__content-title {
         font-family: Georgia, serif;
         line-height: 1.5;
         font-size: 45px;
+        @include for-tablet-large {
+            font-size: 40px;
+        }
     }
     
     .video-block__content-text {
@@ -24,6 +33,16 @@
     
     .video-block__player {
         position: relative;
+        @include for-mobile {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            margin-top: 50px;
+        }
+    }
+    
+    .personal-diary__main-btn {
+        @include for-tablet-large {}
     }
     
     .video-block__player-image {

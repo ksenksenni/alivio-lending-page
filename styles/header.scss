@@ -1,7 +1,9 @@
 .header {
     margin-bottom: 170px;
     background-color: map-get($colors, 'white');
-    ;
+    @include for-tablet-large {
+        margin-bottom: 70px;
+    }
 }
 
 .header__top {
@@ -28,7 +30,7 @@
     }
 }
 
-.header__top-menu--items {
+.header__top-menu-items {
     display: flex;
     list-style: none;
     @include for-tablet-large {
@@ -56,12 +58,6 @@
 .top-menu-item__link {
     color: map-get($colors, 'black');
     text-decoration: none;
-    &:hover {
-        transform: scale(1.2);
-    }
-    &:active {
-        opacity: 30%;
-    }
 }
 
 .header__top-btn {
@@ -100,22 +96,23 @@
     width: 440px;
     padding-top: 50px;
     margin-left: 150px;
-    @include for-tablet-large {}
-    &--heading {
-        font-family: Georgia, sans-serif;
-        font-size: 60px;
-        line-height: 1.5;
-        color: map-get($colors, 'green');
-        margin-bottom: 40px;
-        @include for-tablet-large {
-            color: map-get($colors, 'white');
-            font-size: 45px;
-        }
+}
+
+.header__bottom-content-heading {
+    font-family: Georgia, sans-serif;
+    font-size: 60px;
+    line-height: 1.5;
+    color: map-get($colors, 'green');
+    margin-bottom: 40px;
+    @include for-tablet-large {
+        color: map-get($colors, 'white');
+        font-size: 45px;
     }
-    &--text {
-        margin-bottom: 60px;
-        @include for-tablet-large {
-            color: map-get($colors, 'white');
-        }
+}
+
+.header__bottom-content-text {
+    margin-bottom: 60px;
+    @include for-tablet-large {
+        color: map-get($colors, 'white');
     }
 }
