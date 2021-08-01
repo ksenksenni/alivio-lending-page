@@ -1,11 +1,11 @@
-            .main-description {
+            .description {
                 margin-top: 170px;
                 @include for-tablet-large {
                     margin-top: 0;
                 }
             }
             
-            .main-description__item-introduction {
+            .description__item-introduction {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 150px;
@@ -42,7 +42,7 @@
                 }
             }
             
-            .main-description__items {
+            .description__items {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -56,7 +56,7 @@
                 }
             }
             
-            .main-description__item {
+            .description__item {
                 max-inline-size: 350px;
                 @include for-tablet-large {
                     height: 90%;
@@ -64,7 +64,7 @@
                 }
             }
             
-            .main-description__item-flex-end {
+            .description__item-flex-end {
                 align-self: flex-end;
                 max-width: 350px;
                 @include for-tablet-large {
@@ -72,11 +72,11 @@
                 }
             }
             
-            .main-description__item-namber {
+            .description__item-namber {
                 display: block;
                 position: absolute;
                 z-index: 1;
-                top: 1040px;
+                top: 1320px;
                 font-family: Georgia, serif;
                 font-size: 150px;
                 color: map-get($colors, 'green');
@@ -86,11 +86,11 @@
                 }
             }
             
-            .main-description__item-namber-bottom {
-                top: 1240px;
+            .description__item-namber-bottom {
+                top: 1520px;
             }
             
-            .main-description__item-title {
+            .description__item-title {
                 position: relative;
                 font-family: Georgia, serif;
                 color: map-get($colors, 'black');
@@ -106,12 +106,12 @@
                 }
             }
             
-            .main-description__item-text {
+            .description__item-text {
                 margin-top: 30px;
                 margin-bottom: 30px;
                 margin-left: 0;
             }
             
-            .main-description__item-image {
+            .description__item-image {
                 width: 100%;
             }

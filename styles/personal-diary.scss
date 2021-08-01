@@ -1,96 +1,73 @@
-.personal-diary {
-    position: relative;
-    margin-top: 70px;
-    margin-bottom: 140px;
-    @include for-tablet-large {
-        margin-bottom: 100px;
-    }
-}
-
-.personal-diary__main {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    @include for-tablet-large {
-        text-align: center;
-    }
-}
-
-.personal-diary__main-image {
-    display: block;
-    max-width: 350px;
-    @include for-tablet-large {
-        display: none;
-    }
-}
-
-.personal-diary__main-content {
-    max-width: 550px;
-}
-
-.personal-diary__main-content-caption {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.personal-diary__main-content-caption-title {
-    font-family: Georgia, serif;
-    font-size: 40px;
-    line-height: 1.5;
-    color: map-get($colors, 'green');
-    margin-top: 0;
-}
-
-.personal-diary__main-content-caption-text {
-    margin-bottom: 30px;
-    @include for-tablet-large {
-        margin-bottom: 70px;
-    }
-}
-
-.personal-diary__card {
-    display: block;
-    position: absolute;
-    top: 170px;
-    left: 170px;
-    width: 170px;
-    height: 170px;
-    background-color: map-get($colors, 'white');
-    box-shadow: 0px 5px 10px 0px lightgray;
-    margin: 20px;
-    text-align: center;
-    font-size: 10px;
-    color: map-get($colors, 'black');
-    @include for-tablet-large {
-        display: none;
-    }
-}
-
-.personal-diary__card-heading {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 5px;
-    font-style: 14px;
-    border-bottom: 1px solid map-get($colors, 'black');
-}
-
-.personal-diary__card-image {
-    width: 30px;
-    border-radius: 50%;
-}
-
-.personal-diary__card-caption {
-    font-style: 11px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-}
-
-.personal-diary__card-title {
-    font-family: Georgia, serif;
-    font-style: 16px;
-}
-
-.personal-diary__card-item {
-    text-align: left;
-    margin-bottom: 10px;
-}
+            .personal-diary {
+                margin-top: 70px;
+                margin-bottom: 140px;
+                @include for-tablet-large {
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+            
+            .personal-diary__main {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                @include for-tablet-large {
+                    flex-direction: column;
+                }
+            }
+            
+            .personal-diary__image {
+                position: relative;
+                width: 350px;
+                @include for-tablet-large {
+                    width: 100%;
+                }
+                .personal-diary__main-image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    @include for-tablet-large {
+                        display: none;
+                    }
+                }
+            }
+            
+            .personal-diary__main-card {
+                position: absolute;
+                bottom: -40px;
+                left: -40px;
+                width: 175px;
+                @include for-tablet-large {
+                    position: static;
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
+            
+            .personal-diary__main-content {
+                max-width: 550px;
+                @include for-tablet-large {
+                    order: -1;
+                    max-width: 100%;
+                }
+            }
+            
+            .personal-diary__main-content-caption {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            
+            .personal-diary__main-content-caption-title {
+                font-family: Georgia, serif;
+                font-size: 40px;
+                line-height: 1.5;
+                color: map-get($colors, 'green');
+                margin-top: 0;
+            }
+            
+            .personal-diary__main-content-caption-text {
+                margin-bottom: 30px;
+                @include for-tablet-large {
+                    margin-bottom: 70px;
+                }
+            }

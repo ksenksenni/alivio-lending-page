@@ -13,37 +13,41 @@
 
 <body>
     <header class="header">
-        <div class="header__top container">
+        <div class="container header__flex">
+
             <div>
                 <img src="img/Logo.png" alt="logo">
             </div>
 
-            <nav class="header__top-menu">
-                <ul class="header__top-menu-items">
-                    <li class="header__top-menu-item"><a class="top-menu-item__link menu" href="#">Why Alivio</a></li>
-                    <li class="header__top-menu-item"><a class="top-menu-item__link menu" href="#">Solutions</a></li>
-                    <li class="header__top-menu-item"><a class="top-menu-item__link menu" href="#">Community</a></li>
-                    <li class="header__top-menu-item"><a class="top-menu-item__link menu" href="#">Pricing</a></li>
+            <nav class="header__menu">
+                <ul class="header__menu-items">
+                    <li class="header__menu-item"><a class="header__menu-item-link link menu-link" href="#">Why Alivio</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-link link menu-link" href="#">Solutions</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-link link menu-link" href="#">Community</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-link link menu-link" href="#">Pricing</a></li>
                 </ul>
-                <div class="header__top-btn">
-                    <p class="header__top-text">Sing in</p>
-                    <a class="header__top-btn-link btn" href="#">Start Trial</a>
-                </div>
             </nav>
+
+            <a class="header__link link" href="#">Sing in</a>
+            <a class="header__btn btn link" href="#">Start Trial</a>
+
         </div>
 
-        <div class="header__bottom">
-            <div class="header__bottom-content container">
-                <h1 class="header__bottom-content-heading">Be aware, Manage well.</h1>
-                <p class="header__bottom-content-text">Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-                <a class="btn" href="#">Find Your Way</a>
-            </div>
-        </div>
     </header>
 
     <main>
-        <section class="main-description container">
-            <section class="main-description__item-introduction">
+        <section class="main-screen">
+            <div class="container">
+                <div class="main-screen__content">
+                    <h1 class="main-screen__content-heading">Be aware, Manage well.</h1>
+                    <p class="main-screen__content-text">Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                    <a class="btn link" href="#">Find Your Way</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="description container">
+            <section class="description__item-introduction">
                 <div class="item-introduction__heading">
                     <p class="item-introduction__heading-caption">How it works</p>
                     <h2 class="item-introduction__heading-title">Understand & Release <br> the stress in 3 steps</h2>
@@ -54,49 +58,49 @@
                 </div>
             </section>
 
-            <section class="main-description__items">
-                <section class="main-description__item">
-                    <p class="main-description__item-namber">01</p>
+            <section class="description__items">
+                <section class="description__item">
+                    <p class="description__item-namber">01</p>
 
                     <dl>
-                        <dt class="main-description__item-title">Personalize</dt>
-                        <dd class="main-description__item-text">Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</dd>
-                        <img class="main-description__item-image" src="img/Rectangle1.png" alt="website Alivio">
+                        <dt class="description__item-title">Personalize</dt>
+                        <dd class="description__item-text">Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</dd>
+                        <img class="description__item-image" src="img/Rectangle1.png" alt="website Alivio">
                     </dl>
                 </section>
 
-                <section class="main-description__item-flex-end">
-                    <p class="main-description__item-namber main-description__item-namber-bottom">02</p>
+                <section class="description__item-flex-end">
+                    <p class="description__item-namber description__item-namber-bottom">02</p>
 
                     <dl>
-                        <dt class="main-description__item-title">Write & Understand</dt>
-                        <dd class="main-description__item-text">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</dd>
-                        <img class="main-description__item-image" src="img/Rectangle2.png" alt="books">
+                        <dt class="description__item-title">Write & Understand</dt>
+                        <dd class="description__item-text">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</dd>
+                        <img class="description__item-image" src="img/Rectangle2.png" alt="books">
                     </dl>
                 </section>
 
-                <section class="main-description__item">
-                    <p class="main-description__item-namber">03</p>
+                <section class="description__item">
+                    <p class="description__item-namber">03</p>
 
                     <dl>
-                        <dt class="main-description__item-title">Alivio!</dt>
-                        <dd class="main-description__item-text">Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!</dd>
-                        <img class="main-description__item-image" src="img/Rectangle3.png" alt="You are happy">
+                        <dt class="description__item-title">Alivio!</dt>
+                        <dd class="description__item-text">Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!</dd>
+                        <img class="description__item-image" src="img/Rectangle3.png" alt="You are happy">
                     </dl>
                 </section>
             </section>
         </section>
 
-        <article class="video-block">
+        <section class="video-block">
 
             <div>
                 <h2 class="video-block__content-title">Let's hear about <br> Kayla's success story</h2>
                 <p class="video-block__content-text">See how well Alivio works in a real customer’s life. </p>
-                <a class="btn" href="#">Let's get started</a>
+                <a class="btn link" href="#">Let's get started</a>
             </div>
 
             <div class="video-block__player">
-                <video width="547" height="357" controls="controls" poster="img/video.png">
+                <video class="video-block__player-movie" controls="controls" poster="img/video.png">
                 <source src="img/ovg.ogv" type='video/ogg'>
                 <source src="img/mp4.mp4" type='video/mp4'>
                 <source src="img/webm.webm" type='video/webm'>
@@ -105,11 +109,14 @@
                 <img class="video-block__player-image" src="img/play-white.png" width="60">
 
             </div>
-        </article>
+        </section>
 
         <section class="personal-diary">
             <div class="personal-diary__main container">
-                <img class="personal-diary__main-image" src="img/avatar.png" alt="avatar">
+                <div class="personal-diary__image">
+                    <img class="personal-diary__main-image" src="img/avatar.png" alt="avatar">
+                    <img class="personal-diary__main-card" src="img/card.png" alt="avatar">
+                </div>
 
                 <div class="personal-diary__main-content">
                     <p class="personal-diary__main-content-caption">Our product</p>
@@ -117,22 +124,10 @@
                     <h2 class="personal-diary__main-content-caption-title">You tell us your stress, <br> We make your diary</h2>
                     <p class="personal-diary__main-content-caption-text">Everyone experiences it, and in different ways. <br> Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
 
-                    <a class="btn" href="#">Find Your Way</a>
+                    <a class="btn link" href="#">Find Your Way</a>
                 </div>
             </div>
 
-            <div class="personal-diary__card">
-                <h3 class="personal-diary__card-heading">Customized For</h3>
-                <img class="personal-diary__card-image" src="img/avatar.png" alt="Mikayla">
-                <p class="personal-diary__card-caption">Mikayla</p>
-
-                <h4 class="personal-diary__card-title">Your custom contents</h4>
-
-                <ul>
-                    <li class="personal-diary__card-item">Understand Your Stress</li>
-                    <li class="personal-diary__card-item">Anger Management</li>
-                </ul>
-            </div>
         </section>
     </main>
 
@@ -142,10 +137,10 @@
 
             <nav>
                 <ul class="footer__content-menu">
-                    <li class="footer__content-menu-item menu">Why Alivio</li>
-                    <li class="footer__content-menu-item menu">Solutions</li>
-                    <li class="footer__content-menu-item menu">Community</li>
-                    <li class="footer__content-menu-item menu">Pricing</li>
+                    <li class="footer__content-menu-item"><a class="link menu-link menu-link--white" href="#">Why Alivio</a></li>
+                    <li class="footer__content-menu-item"><a class="link menu-link menu-link--white" href="#">Solutions</a></li>
+                    <li class="footer__content-menu-item"><a class="link menu-link menu-link--white" href="#">Community</a></li>
+                    <li class="footer__content-menu-item"><a class="link menu-link menu-link--white" href="#">Pricing</a></li>
                 </ul>
             </nav>
         </div>

@@ -1,0 +1,46 @@
+.main-screen {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 170px;
+    background-color: map-get($colors, 'white');
+    @include for-tablet-large {
+        background-image: none;
+        background-color: map-get($colors, 'emerald-green');
+        text-align: center;
+        @include for-tablet-large {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+.main-screen__content {
+    width: 440px;
+    padding-top: 175px;
+    padding-bottom: 336px;
+    @include for-tablet-large {
+        text-align: center;
+    }
+    @include for-tablet {
+        width: 100%;
+    }
+}
+
+.main-screen__content-heading {
+    font-family: Georgia, sans-serif;
+    font-size: 60px;
+    line-height: 1.5;
+    color: map-get($colors, 'green');
+    margin: 0;
+    @include for-tablet-large {
+        color: map-get($colors, 'white');
+        font-size: 45px;
+    }
+}
+
+.main-screen__content-text {
+    margin-bottom: 60px;
+    @include for-tablet-large {
+        color: map-get($colors, 'white');
+    }
+}

@@ -1,118 +1,70 @@
-.header {
-    margin-bottom: 170px;
-    background-color: map-get($colors, 'white');
-    @include for-tablet-large {
-        margin-bottom: 70px;
-    }
-}
-
-.header__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 150px;
-    @include for-tablet-large {
-        flex-direction: column;
-        margin-left: 0;
-    }
-}
-
-.header__top-menu {
-    display: flex;
-    padding-left: 0;
-    @include for-tablet-large {
-        flex-direction: column;
-        align-self: stretch;
-        text-align: center;
-    }
-}
-
-.header__top-menu-items {
-    display: flex;
-    list-style: none;
-    @include for-tablet-large {
-        flex-direction: column;
-        padding-left: 0;
-    }
-}
-
-.header__top-menu-item {
-    margin-right: 30px;
-    &:last-child {
-        margin-right: 0;
-    }
-    @include for-tablet-large {
-        margin-right: 0;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-top: 2px solid map-get($colors, 'green');
-        &:last-child {
-            border-bottom: 2px solid map-get($colors, 'green');
+    .header__flex {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include for-tablet-large {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
         }
     }
-}
-
-.top-menu-item__link {
-    color: map-get($colors, 'black');
-    text-decoration: none;
-}
-
-.header__top-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.header__top-text {
-    display: block;
-    align-self: center;
-    margin: 0 20px 0 300px;
-    @include for-tablet-large {
-        display: none;
+    
+    .header__menu {
+        display: flex;
+        padding-left: 0;
+        margin-left: auto;
+        @include for-tablet-large {
+            margin-left: 0;
+            flex-direction: column;
+            align-self: stretch;
+            text-align: center;
+        }
     }
-}
-
-.header__top-btn-link {
-    align-self: center;
-}
-
-.header__bottom {
-    height: 600px;
-    margin-top: 0;
-    background-image: url(../img/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include for-tablet-large {
-        background-image: none;
-        background-color: map-get($colors, 'emerald-green');
-        text-align: center;
+    
+    .header__menu-items {
+        display: flex;
+        list-style: none;
+        @include for-tablet-large {
+            flex-direction: column;
+            padding-left: 0;
+        }
     }
-}
-
-.header__bottom-content {
-    width: 440px;
-    padding-top: 50px;
-    margin-left: 150px;
-}
-
-.header__bottom-content-heading {
-    font-family: Georgia, sans-serif;
-    font-size: 60px;
-    line-height: 1.5;
-    color: map-get($colors, 'green');
-    margin-bottom: 40px;
-    @include for-tablet-large {
-        color: map-get($colors, 'white');
-        font-size: 45px;
+    
+    .header__menu-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include for-tablet-large {
+            margin-right: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-top: 2px solid map-get($colors, 'green');
+            &:last-child {
+                border-bottom: 2px solid map-get($colors, 'green');
+            }
+        }
     }
-}
-
-.header__bottom-content-text {
-    margin-bottom: 60px;
-    @include for-tablet-large {
-        color: map-get($colors, 'white');
+    
+    .header__link {
+        display: block;
+        align-self: center;
+        margin-left: 300px;
+        margin-right: 20px;
+        @include for-tablet-large {
+            border: 2px solid map-get($colors, 'green');
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px 30px;
+            flex-direction: column;
+            text-align: center;
+        }
     }
-}
+    
+    .header__btn {
+        align-self: center;
+        @include for-tablet-large {
+            margin-top: 20px;
+        }
+    }

@@ -33,16 +33,26 @@
     
     .video-block__player {
         position: relative;
-        @include for-mobile {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
+        width: 547px;
+        height: 357px;
+        @include for-tablet-large {
             margin-top: 50px;
         }
+        @include for-mobile {
+            width: 100%;
+        }
+    }
+    
+    .video-block__player-movie {
+        width: 100%;
+        height: auto;
     }
     
     .video-block__player-image {
         position: absolute;
-        bottom: 150px;
-        left: 240px;
+        bottom: 50%;
+        left: 40%;
+        @include for-mobile {
+            width: 20%;
+        }
     }

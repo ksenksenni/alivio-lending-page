@@ -1,10 +1,24 @@
 .btn {
+    display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
     color: map-get($colors, 'white');
     background-color: map-get($colors, 'green');
     border: 1px solid map-get($colors, 'green');
     border-radius: 5px;
+}
+
+.menu-link,
+.header__link {
+    display: inline-block;
+    color: map-get($colors, 'black');
+    text-decoration: none;
+    &--white {
+        color: map-get($colors, 'white');
+    }
+}
+
+.link {
     &:hover {
         transform: scale(1.2);
     }
